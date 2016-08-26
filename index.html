@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forest Bird</title>
+    <meta name="description" content="Forest Bird">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="tree" src="tree.dae"></a-asset-item>
+            <a-asset-item id="bird" src="bird.dae"></a-asset-item>
+        </a-assets>
+      <!-- <a-entity collada-model="#gd8e4f5round" scale="3 1 3"></a-entity> -->
+      <a-entity collada-model="#tree" position="0 0 -10" scale="4 4 4" rotation="0 10 0"></a-entity>
+      <a-entity collada-model="#bird" position="0 0 -10" scale="4 4 4" rotation="0 10 0"></a-entity>
+      <a-entity collada-model="#tree" position="33 0 23" scale="5 5 5" rotation="0 0 0"></a-entity>
+      <a-entity collada-model="#tree" position="50 0 -30" scale="4 4 4" rotation="0 0 0"></a-entity>
+      <a-entity collada-model="#tree" position="-5 0 35" scale="3 3 3" rotation="0 180 0"></a-entity>
+      <a-entity collada-model="#tree" position="-45 0 -50" scale="3 3 3" rotation="0 -90 0"></a-entity>
+      <a-entity collada-model="#tree" position="-15 0 15" scale="5 5 5" rotation="0 80 0"></a-entity>
+      <a-entity collada-model="#tree" position="-38 0 -10" scale="3 3 3" rotation="0 -120 0"></a-entity>
+      <a-plane color="#194a4e" width="200" height="200" rotation="-90 0 0" material="shader: flat"></a-plane>
+      <a-sky color="#95beca"></a-sky>
+      <a-entity light="type: ambient; color: #BBB"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 1" position="-0.5 1 5"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 1" position="0.5 1 -5"></a-entity>
+      <a-entity position="0 2 0">
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
